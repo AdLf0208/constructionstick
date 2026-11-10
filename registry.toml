@@ -1,0 +1,49 @@
+id = "constructionstick"
+kind = "native-mod"
+name = "constructionstick"
+summary = "A Horizon port of constructionstick."
+description = """
+A port of [constructionstick](Mrbysco/ConstructionSticks) for Horizon.
+
+**Implemented so far**
+
+- A right click with a stick on a block claims the click and fills the **plane
+- of the clicked face** with copies of the clicked block: start at
+- `clicked + face.normal`, breadth-first over both in-plane axes and their
+- diagonals, accepting a cell only when the block behind it (`cell - normal`)
+- is still the clicked block.
+- Bounded by the tier limit (`3/9/27/128/1024`) and the player's supply; each
+- placed cell consumes one item of the clicked block's kind and wears the held
+- stick by one; if the supply runs out mid-run the last block is rolled back.
+
+**Not yet ported**
+
+- Placement uses `default_state` of the clicked block (item id = block id); a
+- directional block loses its facing, and blocks whose item id differs from the
+- block id are not supported. Upstream computes `getStateForPlacement` with a
+- fake hit context.
+- Only `minecraft:air` counts as placeable (upstream also replaces replaceable
+- blocks when the `replace` option is on); no living-entity or block-entity
+- blacklist check yet.
+- No options screen/undo/keys, no angel/destruction/replacement modes, no
+
+Original copyright and licence notices are kept in this repository. Pinned to
+Horizon 1d63e0a and horizon-mixins 5a64af93. Help with the remaining slices is
+welcome.
+"""
+authors = ["AdLf0208"]
+owners = ["AdLf0208"]
+owner_ids = [107615167]
+license = "MIT"
+source = "https://github.com/AdLf0208/constructionstick"
+icon = "icons/constructionstick.png"
+categories = ["utility"]
+tags = ["port", "horizon"]
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-10"
+game = "26.3"
+file = "constructionstick.hnmod"
+sha256 = "a9dd66b2381cadb2219232aff98c8407c7fbe6ac85c2cb5c542b9dd0efd69f94"
+changelog = "First release"

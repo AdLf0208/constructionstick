@@ -1,0 +1,16 @@
+[package]
+name = "horizon-constructionstick"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "MIT"
+description = "Construction Sticks for Horizon: place a run of blocks along the clicked face"
+# Ported from: Construction Sticks 1.5.0 (Mrbysco/ConstructionSticks, MIT),
+# Minecraft Java 1.21.1 NeoForge. Local-only port.
+
+[lib]
+path = "mixins/constructionstick/runtime.rs"
+
+[workspace]
+members = ["tools/audit"]
+resolver = "2"

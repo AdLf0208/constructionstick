@@ -1,0 +1,18 @@
+{
+  "category": "misc",
+  "key": {
+    "#": "#c:glass_blocks",
+    "O": "minecraft:tnt",
+    "X": "minecraft:diamond_pickaxe"
+  },
+  "pattern": [
+    " #X",
+    "#O#",
+    "X# "
+  ],
+  "result": {
+    "count": 1,
+    "id": "constructionstick:template_destruction"
+  },
+  "type": "minecraft:crafting_shaped"
+}

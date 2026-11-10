@@ -1,0 +1,17 @@
+{
+  "category": "equipment",
+  "key": {
+    "#": "#c:rods/wooden",
+    "X": "#c:rods/wooden"
+  },
+  "pattern": [
+    "  X",
+    " # ",
+    "#  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "constructionstick:wooden_stick"
+  },
+  "type": "minecraft:crafting_shaped"
+}

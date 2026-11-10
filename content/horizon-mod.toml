@@ -1,0 +1,8 @@
+# Carried over from ConstructionSticks-1.21.1-1.5.0.jar by horizon-port-pack, for local use only.
+# Licence: MIT License
+id = "constructionstick"
+name = "Construction Sticks"
+version = "1.5.0"
+api = "0.2"
+side = "both"
+capabilities = ["registries"]

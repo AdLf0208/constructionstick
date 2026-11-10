@@ -1,0 +1,16 @@
+{
+  "title": "Construction Sticks",
+  "icon": "constructionstick:wooden_stick",
+  "items": [
+    "constructionstick:wooden_stick",
+    "constructionstick:copper_stick",
+    "constructionstick:iron_stick",
+    "constructionstick:diamond_stick",
+    "constructionstick:netherite_stick",
+    "constructionstick:template_angel",
+    "constructionstick:template_battery",
+    "constructionstick:template_destruction",
+    "constructionstick:template_replacement",
+    "constructionstick:template_unbreakable"
+  ]
+}
